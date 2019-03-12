@@ -162,7 +162,7 @@ binding provided if set.
 Token Support
 -------------
 
-As the keystone-charm supports multiple releases of the OpenStack software, it
+As the keystone charm supports multiple releases of the OpenStack software, it
 also supports two keystone token systems: UUID and Fernet.  The capabilities are:
 
 - pre 'ocata': UUID tokens only.
@@ -220,7 +220,7 @@ To quote from the [FAQ](https://docs.openstack.org/keystone/queens/admin/identit
 
 ### Configuring Key Lifetime
 
-In the keystone-charm, the _rotation frequency_ is calculated
+In the keystone charm, the _rotation frequency_ is calculated
 automatically from the `token-expiration` and the `fernet-max-active-keys`
 configuration parameters.  For example, with an expiration of 24 hours and
 6 active keys, the rotation frequency is calculated as:
@@ -249,7 +249,7 @@ particular, `fernet-max-active-keys` affects the rotation time.
 
 ### Upgrades
 
-When an older keystone-charm is upgraded to this version, NO change will
+When an older keystone charm is upgraded to this version, NO change will
 occur to the token system.  That is, an ocata system will continue to use
 UUID tokens.  In order to change the token system to Fernet, change the
 `token-provider` configuration item to `fernet`.  This will switch the
