@@ -124,7 +124,7 @@ NOTE: If your certificate is signed by a Certificate Authority present in the
 CA Certificate Store in operating systems used in your deployment you do not
 need to provide the `ssl_ca` configuration option.
 
-Network Space support
+Network Space Support
 ---------------------
 
 This charm supports the use of Juju Network Spaces, allowing the charm to be
@@ -218,7 +218,7 @@ To quote from the [FAQ](https://docs.openstack.org/keystone/queens/admin/identit
         dividing the token lifetime, in hours, by the frequency of rotation in
         hours and adding two. Better illustrated as:
 
-### Configuring key lifetime
+### Configuring Key Lifetime
 
 In the keystone-charm, the _rotation frequency_ is calculated
 automatically from the `token-expiration` and the `fernet-max-active-keys`
